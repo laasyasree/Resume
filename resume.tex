@@ -1,0 +1,260 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Original author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Modifications by:
+% Junhao Dong <junhao.dong96@gmail.com>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-skyblue}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\makeatletter
+\patchcmd{\@sectioncolor}{\color}{\mdseries\color}{}{}
+\makeatother
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{profile}
+\name{Laasya}{Sree}
+\position{Student}
+% \address{address}
+
+\mobile{9381078187}
+\email{laasyasreesapa@gmail.com}
+% \homepage{homepage}
+\github{laasyasree}
+%\linkedin{junhaodong}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% \makecvfooter
+%   {\today}
+%   {\thepage}
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+%{resume/education.tex}
+\cvsection{Education}
+
+\begin{cventries}
+  \cventry
+    {Bachelors in Computer Science and Engineering, CGPA: 9.35/10} % Degree
+    { Amrita Vishwa Vidyapeetham} % Institution
+    {Kollam, Kerala, India} % Location
+    {May 2019} % Date(s)
+    {
+      \begin{cvitems} % Description(s) bullet points
+         \item {\textbf{SR edu centre}, Warangal , India --- \entrydatestyle{Higher secondary(2017-18), 954/1000}}
+         \vspace{0.5mm}
+         \item {\textbf{SPR High School}, Warangal, India --- \entrydatestyle{Secondary(2016), CGPA : 9.8}}
+      \end{cvitems}
+    }
+\end{cventries}
+
+    
+%{resume/skills.tex}
+
+\cvsection{Skills}
+
+\begin{cvskills}
+ \cvskill
+ 	{Operating Systems} % Type
+    {Linux(Debian Family), Windows} %Skillset
+  \cvskill
+    {Languages} % Type
+    {Python, C, C++} % Skillset
+
+  \cvskill
+    {Web Development} % Type
+    {HTML, CSS, Javascript(basic)} % Skillset
+   \cvskill
+   	{VCS} %Type
+    {Gerrit, Git}
+   \cvskill
+   	{I blog at } %Type
+    {https://laasyasree.wordpress.com/} % Skillset
+\end{cvskills}
+
+
+%{resume/experience.tex}
+\cvsection{Experience}
+
+\begin{cventries}
+  \cventry
+    {MediaWiki} % Job title
+    {Open source} % Organization
+    {} % Location
+    {Nov 2018- Mar 2019} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Contributed to Wikimedia organisation.   Hacked through the Mediawiki's large codebase. Learned about LAMP stack a common, free and open-source web stack while hosting Wikimedia.
+        }
+      \end{cvitems}
+    }
+
+  \cventry
+    {Contributor} % Job title
+    {Contributions} % Organization
+    {} % Location
+    {} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Sent 10+ patches and a few got merged. Mediawiki powers Wikipedia and many other wikis used by millions of people. This contributions gave me an good exposure working with the large code base.}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Problem Solving} % Job title
+    {Competitive Programmer} % Organization
+    {} % Location
+    {April 2019 - Present} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Solved 90+ problems in codeforces and 40+ problems in hackerrank. Participated in codeforces contests. }
+      \end{cvitems}
+    }
+   
+   \cventry
+    {Algorithm's Implementation} % Job title
+    {Technical skills} % Organization
+    {} % Location
+    {April 2019 - Present} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Effectively implemented variety of algorithms such as elementary sorting algorithms, advanced sorting algorithms, selection algorithms, greedy algorithm and many more in C and C++. }
+      \end{cvitems}
+    }
+    
+  \cventry
+    {Foss club} % Job title
+    {Amfoss} % Organization
+    {} % Location
+    {Nov 2018 - Present} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {An active member of Free and Open Source Software Club in our college.}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Volunteering} % Job title
+    {Activities} % Organization
+    {} % Location
+    {} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Took part in various charitable works of Mata Amritanandamayi Math, including AMMA's birthday celebration and Amala Bharatam Cleanup Drive - a pan India cleanup program initiated by the Math.}
+      \end{cvitems}
+   }
+\end{cventries}
+
+%{resume/projects.tex}
+
+\cvsection{Projects}
+
+\begin{cventries}
+  \cventry
+    {Web app} % Empty position
+    {Time Scheduler app} % Project
+    {} % Empty location
+    {} % Empty date
+    {
+      \begin{cvitems} % Description(s) bullet points
+        \item {A simple web app which serves as a all in one scheduler app for a daily end user.}
+       \item{The main aim of this project is to introduce a new app which schedules time more productively.}
+       \item{Environment : HTML, CSS, JavaScript}
+      \end{cvitems}
+    }
+    
+   \cventry
+   	{} % Empty position
+    {Telegram Bot} % Project
+    {} % Empty location
+    {} % Empty date
+    {
+      \begin{cvitems}% Description(s) bullet points
+      	\item{Created a telegram bot which will send me my daily timetable. }
+        \item{Automated it using cron job.}
+        \end{cvitems}
+    }
+\end{cventries}
+
+%{resume.achievements.tex}
+\cvsection{Achievements}
+
+\begin{cventries}
+	\cventry
+    {} % Job title
+    {} % Organization
+    {} % Location
+    {} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Attended a Hackathon of India's Biggest Ever Open Source Event "HACKFERENCE INDIA".}
+        \item{3rd Rank in a Hackathon conducted at our university.}
+      \end{cvitems}
+    }    
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+\end{document}
+
